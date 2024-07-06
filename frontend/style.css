@@ -16,8 +16,10 @@
     border:2px solid #EEEEEE;
     background: #EEEEEE;
     outline:none;
+    border-radius: 2%;
+    transition: border 0.3s ease, transform 0.3s ease;
 }
-.URL-input:focus {
+.URL-input:hover {
     border:2px solid #0485ff;
 }
 .convert-button {
@@ -28,13 +30,127 @@
     margin:5px;
     cursor: pointer;
 }
+.convert-button:hover{
+  background: #0577e1;
+  transform: scale(1.01);
+}
 .app{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:start;
+    align-items:center;
     gap:10px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background: white;
 }
 .videoPlayer{
     margin-bottom: 10px;
+}
+
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .videoDetails {
+    font-family: Arial;
+    margin-top: 20px;
+  }
+  
+  .details-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .thumbnail {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0485ff;;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-link:hover {
+    background-color: #0778e1;;
+  }
+  .heading{
+    margin-top: 100px;
+  }
+
+  .navbar {
+    width: 100%;
+    background: white;
+    padding: 1rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #ddd; /* Line at the bottom */
+  }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-left: 2rem;
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #777;
+}
+
+.navbar-link-login {
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link-login:hover {
+  background: #555;
 }
