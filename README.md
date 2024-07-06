@@ -1,7 +1,7 @@
 # parcel
- -Dev Build
- -Local Server
- -Does HMR (Hot Module Replacement)
+ - Dev Build
+ - Local Server
+ - Does HMR (Hot Module Replacement)
 # ytdl-core
  - ytdl-core is a Node.js library that enables developers to easily interact with YouTube videos
  - Provide a simple and convenient API for downloading and fetching video information
